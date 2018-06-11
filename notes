@@ -1,0 +1,9 @@
+В данном репозитории содержатся файлы для сборки сайта.
+
+Сайт собирается в папку ./build, внутри которой расположен репозиторий https://github.com/erasmusplusclass/erasmusplusclass.github.io
+
+Собранный сайт пушится в https://github.com/erasmusplusclass/erasmusplusclass.github.io
+
+...
+
+Profit!
