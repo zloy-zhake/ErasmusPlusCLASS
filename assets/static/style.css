@@ -40,3 +40,9 @@ header nav ul li {
 div.page {
     background: #f1fbfe;
 }
+
+/* ===== */
+
+header nav ul.lang {
+    margin-bottom: 10px;
+}

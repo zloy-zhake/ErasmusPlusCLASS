@@ -1,17 +1,17 @@
 [project]
 name = ErasmusPlusCLASS
 
-[alternatives.en]
-name = English
-primary = yes
-locale = en_US
-
 [alternatives.ru]
 name = Russian
-url_prefix = /ru/
+primary = yes
 locale = ru
 
 [alternatives.kz]
 name = Kazakh
 url_prefix = /kz/
 locale = kk
+
+[alternatives.en]
+name = English
+url_prefix = /en/
+locale = en_US
