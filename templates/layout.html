@@ -6,9 +6,9 @@
   <header>
     <nav>
       <ul class="nav navbar-nav lang" align="right">
-        <li><a href="/" title="Главная страница (на русском)">ru</a></li>
-        <li><a href="/kz" title="Басты бет (қазақша)">kz</a></li>
-        <li><a href="/en" title="Main page (in English)">en</a></li>
+        <li><a href="{{ '.'|url(alt='ru') }}" title="русский">ru</a></li>
+        <li><a href="{{ '.'|url(alt='kz') }}" title="қазақша">kz</a></li>
+        <li><a href="{{ '.'|url(alt='en') }}" title="english">en</a></li>
       </ul>
     </nav>
     <img src="/static/COMP-LINGUI-LOGO_FINAL.jpg" height="100px" align="left" hspace="10" />
