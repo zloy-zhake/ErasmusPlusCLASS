@@ -18,16 +18,45 @@
     <h5 align="center">al-Faraby KazNU team web-site</h5>
     <nav>
       <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Project Highlights'],
-          ['/info4students', 'Information for Students'],
-          ['/contacts', 'Contacts']
-        ] %}
+        {% if this.alt == 'ru' %}
+          <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Добро пожаловать</a></li>
+            {% for href, title in [
+              ['/blog', 'События проекта'],
+              ['/info4students', 'Информация для студентов'],
+              ['/contacts', 'Контакты']
+            ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
+            {% endfor %}
+        {% endif %}
+        
+        {% if this.alt == 'kz' %}
+          <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Добро пожаловать</a></li>
+            {% for href, title in [
+              ['/blog', 'События проекта'],
+              ['/info4students', 'Информация для студентов'],
+              ['/contacts', 'Контакты']
+            ] %}
+          <li{% if this.is_child_of(href) %} class="active"{% endif
+            %}><a href="{{ href|url }}">{{ title }}</a></li>
+            {% endfor %}
+        {% endif %}
+        
+        {% if this.alt == 'en' %}
+          <li{% if this._path == '/' %} class="active"{% endif
+            %}><a href="{{ '/'|url }}">Welcome</a></li>
+          {% for href, title in [
+            ['/blog', 'Project Highlights'],
+            ['/info4students', 'Information for Students'],
+            ['/contacts', 'Contacts']
+          ] %}
+            <li{% if this.is_child_of(href) %} class="active"{% endif
+              %}><a href="{{ href|url }}">{{ title }}</a></li>
+          {% endfor %}
+        {% endif %}
+
       </ul>
     </nav>
   </header>
