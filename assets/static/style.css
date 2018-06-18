@@ -15,7 +15,7 @@ header, footer, div.page {
     width: 760px;
     margin: 0 auto;
     background: #daeef3;
-    padding: 20px 30px;
+    padding: 10px 30px;
 }
 
 header h1 {
@@ -45,4 +45,10 @@ div.page {
 
 header nav ul.lang {
     margin-bottom: 10px;
+}
+header h4 {
+    margin: 0;
+}
+header h5 {
+    margin: 10px;
 }

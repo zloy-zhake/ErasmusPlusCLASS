@@ -16,6 +16,7 @@
     <h1>Erasmus+ CLASS</h1>
     <h4>Interdisciplinary Master Program on Computational Linguistics at Central Asian Universities</h4>
     <h5 align="center">al-Faraby KazNU team web-site</h5>
+    <hr />
     <nav>
       <ul class="nav navbar-nav">
         {% if this.alt == 'ru' %}
@@ -56,9 +57,9 @@
               %}><a href="{{ href|url }}">{{ title }}</a></li>
           {% endfor %}
         {% endif %}
-
       </ul>
     </nav>
+    <hr />
   </header>
   <div class="page">
     {% block body %}{% endblock %}
